@@ -1,0 +1,169 @@
+body {
+  color: white;
+  font-family: "Courier New", monospace;
+  background-color: rgb(43, 41, 41);
+}
+img {
+  width: 130px; 
+  height: 130px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 3px solid pink;
+  margin-right: 15px; /* Space between image and text */
+  display: block; /* Block ensures better spacing */
+  margin-top: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 5px 5px 2px 5px; 
+  box-shadow: 0 2px 20px rgba(245, 159, 205, 0.42);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid #ffffff; 
+  border-top: 4px solid #b6babd; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  background-image: url(kuru.gif);
+}
+#loading-screen img {
+  width: 100px;       
+  height: 100px;       
+  border-radius: 50%;  /
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#main-content {
+  text-align: center;
+  margin-top: 20px;
+}
+.container {
+  width: 60vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: rgba(23, 34, 54, 0.42);
+  margin-top: 20vh;
+  display: flex;
+  align-items: center; /* Center image and text */
+  gap: 15px; /* Space between image and text */
+  border-radius: 15px;
+  border: 5px solid pink;
+  animation: neon-glow 5s infinite linear;
+}
+
+.rows {
+  display: flex; /* Keep image and text on same row */
+  align-items: center; /* Aligns text vertically */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 27%;
+  color: lightgray;
+
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0px 0px 10px pink, 0px 0px 5px pink, 0px 0px 5px pink;
+  }
+  50% {
+    box-shadow: 0px 0px 10px purple, 0px 0px 5px purple, 0px 0px 5px purple;
+  }
+  100% {
+    box-shadow: 0px 0px 10px hotpink, 0px 0px 5px hotpink, 0px 0px 5px hotpink;
+  }
+}
+.home {
+ border-radius: 4px;
+ background: rgba(255, 255, 255, 0.1); /* Glassmorphism */
+ border: 2px solid rgb(206, 202, 202);
+ color: whitesmoke;
+ margin-left: 15px;
+ width: 4vh;
+ cursor: pointer;
+}
+.home:hover {
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism */
+  backdrop-filter: blur(2px);
+  box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.42);
+  transition: 0.2s;
+}
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid #ffffff; 
+  border-top: 4px solid #b6babd; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  background-image: url(kuru.gif);
+}
+#loading-screen img {
+  width: 100px;       
+  height: 100px;       
+  border-radius: 50%;  /
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#main-content {
+  text-align: center;
+  margin-top: 20px;
+}
